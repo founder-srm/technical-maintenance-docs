@@ -1,17 +1,33 @@
 {
-  "name": "fc-documentation",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/starlight": "^0.35.2",
-    "astro": "^5.6.1",
-    "sharp": "^0.34.2"
-  }
+	"name": "fc-documentation",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"fmt": "biome check --write .",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"@astrojs/starlight": "^0.35.2",
+		"@lorenzo_lewis/starlight-utils": "^0.3.2",
+		"astro": "^5.6.1",
+		"astro-mermaid": "^1.0.4",
+		"mermaid": "^11.9.0",
+		"sharp": "^0.34.2",
+		"starlight-contributor-list": "^0.3.0",
+		"starlight-cooler-credit": "^0.4.0",
+		"starlight-giscus": "^0.6.1",
+		"starlight-heading-badges": "^0.6.0",
+		"starlight-image-zoom": "^0.13.0",
+		"starlight-links-validator": "^0.17.0",
+		"starlight-sidebar-topics-dropdown": "^0.5.1",
+		"starlight-versions": "^0.5.4",
+		"starlight-videos": "^0.3.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.1.3"
+	}
 }
