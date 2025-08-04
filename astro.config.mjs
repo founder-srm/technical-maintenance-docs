@@ -36,10 +36,15 @@ export default defineConfig({
 				starlightCoolerCredit(),
 				starlightVideos(),
 				starlightGiscus({
-					repo: "username/github_repo_name",
-					repoId: "repository_id_from_giscus",
-					category: "category_name_from_github_discussions",
-					categoryId: "category_id_from_giscus",
+					repo: "founder-srm/technical-maintenance-docs",
+					repoId: "R_kgDOPYTN7g",
+					category: "Q&A",
+					categoryId: "DIC_kwDOPYTN7s4Ctxuk",
+					inputPosition: "top",
+					mapping: "pathname",
+					theme: "noborder_dark",
+					reactions: true,
+					lazy: true
 				}),
 			],
 			components: {
@@ -51,7 +56,7 @@ export default defineConfig({
 				{
 					icon: "github",
 					label: "GitHub",
-					href: "https://github.com/withastro/starlight",
+					href: "https://github.com/founder-srm/technical-maintenance-docs",
 				},
 			],
 			sidebar: [
