@@ -6,7 +6,6 @@ import { defineConfig } from "astro/config";
 import mermaid from "astro-mermaid";
 import starlightCoolerCredit from "starlight-cooler-credit";
 import starlightGiscus from "starlight-giscus";
-import starlightHeadingBadges from "starlight-heading-badges";
 import starlightImageZoom from "starlight-image-zoom";
 import starlightLinksValidator from "starlight-links-validator";
 import starlightVersions from "starlight-versions";
@@ -32,7 +31,6 @@ export default defineConfig({
 				starlightVersions({
 					versions: [{ slug: "1.0" }],
 				}),
-				starlightHeadingBadges(),
 				starlightCoolerCredit(),
 				starlightVideos(),
 				starlightGiscus({
@@ -48,8 +46,10 @@ export default defineConfig({
 				}),
 			],
 			components: {
-				// Override the default `Sidebar` component with a custom one.
-				Sidebar: "./src/components/Sidebar.astro",
+				// Override components 
+				TableOfContents: "./src/components/TableOfContents.astro",
+				MarkdownContent: "./src/components/MarkdownContent.astro",
+				PageTitle: "./src/components/PageTitle.astro"
 			},
 			title: "My Docs",
 			social: [

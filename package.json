@@ -20,10 +20,8 @@
 		"starlight-contributor-list": "^0.3.0",
 		"starlight-cooler-credit": "^0.4.0",
 		"starlight-giscus": "^0.6.1",
-		"starlight-heading-badges": "^0.6.0",
 		"starlight-image-zoom": "^0.13.0",
 		"starlight-links-validator": "^0.17.0",
-		"starlight-sidebar-topics-dropdown": "^0.5.1",
 		"starlight-versions": "^0.5.4",
 		"starlight-videos": "^0.3.0"
 	},

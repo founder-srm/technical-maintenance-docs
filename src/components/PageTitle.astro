@@ -1,0 +1,8 @@
+---
+import Default from '@astrojs/starlight/components/PageTitle.astro'
+import StarlightVideosPageTitle from 'starlight-videos/components/PageTitle.astro'
+---
+
+<StarlightVideosPageTitle>
+	<Default {...Astro.props}><slot /></Default>
+</StarlightVideosPageTitle>
