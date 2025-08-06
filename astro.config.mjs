@@ -10,6 +10,7 @@ import starlightImageZoom from "starlight-image-zoom";
 import starlightLinksValidator from "starlight-links-validator";
 import starlightThemeNova from "starlight-theme-nova";
 import starlightVideos from "starlight-videos";
+import starlightScrollToTop from "starlight-scroll-to-top";
 
 // https://astro.build/config
 export default defineConfig({
@@ -37,6 +38,9 @@ export default defineConfig({
 			plugins: [
 				starlightThemeNova({
 					nav: [{ label: "FC", href: "https://www.thefoundersclub.in" }],
+				}),
+				starlightScrollToTop({
+					position:'center'
 				}),
 				starlightLinksValidator(),
 				starlightImageZoom(),
