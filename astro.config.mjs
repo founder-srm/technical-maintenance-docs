@@ -12,6 +12,7 @@ import starlightThemeNova from "starlight-theme-nova";
 import starlightVideos from "starlight-videos";
 import starlightScrollToTop from "starlight-scroll-to-top";
 import starlightContextualMenu from "starlight-contextual-menu";
+import starlightBlog from 'starlight-blog'
 
 // https://astro.build/config
 export default defineConfig({
@@ -45,6 +46,16 @@ export default defineConfig({
 				}),
 				starlightScrollToTop({
 					position:'center'
+				}),
+				starlightBlog({
+					title: "FC Tech Blog",
+					navigation: "header-end",
+					postCount: 1,
+					recentPostCount: 1,
+					metrics: {
+						readingTime: true,
+						words: 'total',
+					},
 				}),
 				starlightLinksValidator(),
 				starlightImageZoom(),
@@ -127,6 +138,10 @@ export default defineConfig({
 					label: "Reference",
 					autogenerate: { directory: "reference"}
 				},
+				{
+					label: "Blog Posts",
+					link: "blog"
+				}
 			],
 		}),
 	],
