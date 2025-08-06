@@ -8,13 +8,13 @@ import starlightCoolerCredit from "starlight-cooler-credit";
 import starlightGiscus from "starlight-giscus";
 import starlightImageZoom from "starlight-image-zoom";
 import starlightLinksValidator from "starlight-links-validator";
+import starlightThemeNova from "starlight-theme-nova";
 import starlightVersions from "starlight-versions";
 import starlightVideos from "starlight-videos";
-import starlightThemeNova from 'starlight-theme-nova'
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://technical-maintenance-docs.pages.dev',	
+	site: "https://technical-maintenance-docs.pages.dev",
 	integrations: [
 		mermaid({
 			theme: "forest",
@@ -28,17 +28,16 @@ export default defineConfig({
 		starlight({
 			title: "FC Technical Docs",
 			logo: {
-				light: './src/assets/1.0/light-logo-fc-trimmed.png',
-				dark: './src/assets/1.0/dark-logo-fc-trimmed.png'
+				light: "./src/assets/1.0/light-logo-fc-trimmed.png",
+				dark: "./src/assets/1.0/dark-logo-fc-trimmed.png",
 			},
 			editLink: {
-				baseUrl: 'https://github.com/founder-srm/technical-maintenance-docs/edit/main'
+				baseUrl:
+					"https://github.com/founder-srm/technical-maintenance-docs/edit/main",
 			},
 			plugins: [
 				starlightThemeNova({
-					nav:[
-						{ label: 'FC', href: 'https://www.thefoundersclub.in' },
-					]
+					nav: [{ label: "FC", href: "https://www.thefoundersclub.in" }],
 				}),
 				starlightLinksValidator(),
 				starlightImageZoom(),
@@ -57,14 +56,14 @@ export default defineConfig({
 					mapping: "pathname",
 					theme: "noborder_dark",
 					reactions: true,
-					lazy: true
+					lazy: true,
 				}),
 			],
 			components: {
-				// Override components 
+				// Override components
 				TableOfContents: "./src/components/TableOfContents.astro",
 				MarkdownContent: "./src/components/MarkdownContent.astro",
-				PageTitle: "./src/components/PageTitle.astro"
+				PageTitle: "./src/components/PageTitle.astro",
 			},
 			social: [
 				{
@@ -76,7 +75,7 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: "Guides",
-					autogenerate: { directory: "/1.0/guides"}
+					autogenerate: { directory: "/1.0/guides" },
 				},
 				{
 					label: "Reference",
