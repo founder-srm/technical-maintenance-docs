@@ -57,6 +57,7 @@ export default defineConfig({
 			],
 			components: {
 				// Override components
+				Pagination: "./src/components/CustomPagination.astro",
 				TableOfContents: "./src/components/TableOfContents.astro",
 				MarkdownContent: "./src/components/MarkdownContent.astro",
 				PageTitle: "./src/components/PageTitle.astro",
