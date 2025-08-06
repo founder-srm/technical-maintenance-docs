@@ -24,7 +24,6 @@
 		"starlight-giscus": "^0.6.1",
 		"starlight-image-zoom": "^0.13.0",
 		"starlight-links-validator": "^0.17.0",
-		"starlight-scroll-to-top": "^0.3.1",
 		"starlight-theme-nova": "^0.9.3",
 		"starlight-videos": "^0.3.0"
 	},

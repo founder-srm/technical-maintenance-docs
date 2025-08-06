@@ -1,19 +1,18 @@
 // @ts-check
 
 import starlight from "@astrojs/starlight";
-import { defineConfig } from "astro/config";
-import { viewTransitions } from "astro-vtbot/starlight-view-transitions";
 import starlightUtils from "@lorenzo_lewis/starlight-utils";
+import { defineConfig } from "astro/config";
 import mermaid from "astro-mermaid";
+import { viewTransitions } from "astro-vtbot/starlight-view-transitions";
+import starlightBlog from "starlight-blog";
+import starlightContextualMenu from "starlight-contextual-menu";
 import starlightCoolerCredit from "starlight-cooler-credit";
 import starlightGiscus from "starlight-giscus";
 import starlightImageZoom from "starlight-image-zoom";
 import starlightLinksValidator from "starlight-links-validator";
 import starlightThemeNova from "starlight-theme-nova";
 import starlightVideos from "starlight-videos";
-import starlightScrollToTop from "starlight-scroll-to-top";
-import starlightContextualMenu from "starlight-contextual-menu";
-import starlightBlog from 'starlight-blog'
 
 // https://astro.build/config
 export default defineConfig({
@@ -44,10 +43,7 @@ export default defineConfig({
 					nav: [{ label: "FC", href: "https://www.thefoundersclub.in" }],
 				}),
 				starlightContextualMenu({
-					actions: ["copy", "view", "chatgpt", "claude"]
-				}),
-				starlightScrollToTop({
-					position:'center'
+					actions: ["copy", "view", "chatgpt", "claude"],
 				}),
 				starlightBlog({
 					title: "FC Tech Blog",
@@ -56,7 +52,7 @@ export default defineConfig({
 					recentPostCount: 1,
 					metrics: {
 						readingTime: true,
-						words: 'total',
+						words: "total",
 					},
 				}),
 				starlightLinksValidator(),
@@ -99,57 +95,53 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: "Guides",
-					items:[
-						'guides/example',
-						'guides/interview-guide',
+					items: [
+						"guides/example",
+						"guides/interview-guide",
 						{
-							label: 'FC',
+							label: "FC",
 							collapsed: true,
 							items: [
-								'guides/fc/contributing-guide',
+								"guides/fc/contributing-guide",
 								{
-									label: 'Admin',
+									label: "Admin",
 									collapsed: true,
 									items: [
-										'guides/fc/admin/new-event',
-										'guides/fc/admin/registrations-guide',
-										'guides/fc/admin/ticket-handling',
+										"guides/fc/admin/new-event",
+										"guides/fc/admin/registrations-guide",
+										"guides/fc/admin/ticket-handling",
 									],
 								},
 								{
-									label: 'Studio',
+									label: "Studio",
 									collapsed: true,
 									items: [
-										'guides/fc/studio/content-guide',
-										'guides/fc/studio/structure/home-page',
+										"guides/fc/studio/content-guide",
+										"guides/fc/studio/structure/home-page",
 									],
 								},
 								{
-									label: 'Website',
+									label: "Website",
 									collapsed: true,
-									items: [
-										'guides/fc/website/coming-soon',
-									],
+									items: ["guides/fc/website/coming-soon"],
 								},
 							],
 						},
 						{
-							label: 'App',
+							label: "App",
 							collapsed: true,
-							items: [
-								'guides/app/contributing',
-							],
+							items: ["guides/app/contributing"],
 						},
 					],
 				},
 				{
 					label: "Reference",
-					autogenerate: { directory: "reference"}
+					autogenerate: { directory: "reference" },
 				},
 				{
 					label: "Blog Posts",
-					link: "blog"
-				}
+					link: "blog",
+				},
 			],
 		}),
 	],
