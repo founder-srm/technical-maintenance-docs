@@ -9,7 +9,6 @@ import starlightGiscus from "starlight-giscus";
 import starlightImageZoom from "starlight-image-zoom";
 import starlightLinksValidator from "starlight-links-validator";
 import starlightThemeNova from "starlight-theme-nova";
-import starlightVersions from "starlight-versions";
 import starlightVideos from "starlight-videos";
 
 // https://astro.build/config
@@ -42,9 +41,6 @@ export default defineConfig({
 				starlightLinksValidator(),
 				starlightImageZoom(),
 				starlightUtils(),
-				starlightVersions({
-					versions: [{ slug: "1.0" }],
-				}),
 				starlightCoolerCredit(),
 				starlightVideos(),
 				starlightGiscus({
@@ -75,11 +71,52 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: "Guides",
-					autogenerate: { directory: "/1.0/guides" },
+					items:[
+						'guides/example',
+						'guides/interview-guide',
+						{
+							label: 'FC',
+							collapsed: true,
+							items: [
+								'guides/fc/contributing-guide',
+								{
+									label: 'Admin',
+									collapsed: true,
+									items: [
+										'guides/fc/admin/new-event',
+										'guides/fc/admin/registrations-guide',
+										'guides/fc/admin/ticket-handling',
+									],
+								},
+								{
+									label: 'Studio',
+									collapsed: true,
+									items: [
+										'guides/fc/studio/content-guide',
+										'guides/fc/studio/structure/home-page',
+									],
+								},
+								{
+									label: 'Website',
+									collapsed: true,
+									items: [
+										'guides/fc/website/coming-soon',
+									],
+								},
+							],
+						},
+						{
+							label: 'App',
+							collapsed: true,
+							items: [
+								'guides/app/contributing',
+							],
+						},
+					],
 				},
 				{
 					label: "Reference",
-					autogenerate: { directory: "/1.0/reference" },
+					autogenerate: { directory: "reference"}
 				},
 			],
 		}),
