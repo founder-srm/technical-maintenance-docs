@@ -1,8 +1,9 @@
 // @ts-check
 
 import starlight from "@astrojs/starlight";
-import starlightUtils from "@lorenzo_lewis/starlight-utils";
 import { defineConfig } from "astro/config";
+import { viewTransitions } from "astro-vtbot/starlight-view-transitions";
+import starlightUtils from "@lorenzo_lewis/starlight-utils";
 import mermaid from "astro-mermaid";
 import starlightCoolerCredit from "starlight-cooler-credit";
 import starlightGiscus from "starlight-giscus";
@@ -38,6 +39,7 @@ export default defineConfig({
 					"https://github.com/founder-srm/technical-maintenance-docs/edit/main",
 			},
 			plugins: [
+				viewTransitions(),
 				starlightThemeNova({
 					nav: [{ label: "FC", href: "https://www.thefoundersclub.in" }],
 				}),
