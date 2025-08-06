@@ -11,6 +11,7 @@ import starlightLinksValidator from "starlight-links-validator";
 import starlightThemeNova from "starlight-theme-nova";
 import starlightVideos from "starlight-videos";
 import starlightScrollToTop from "starlight-scroll-to-top";
+import starlightContextualMenu from "starlight-contextual-menu";
 
 // https://astro.build/config
 export default defineConfig({
@@ -38,6 +39,9 @@ export default defineConfig({
 			plugins: [
 				starlightThemeNova({
 					nav: [{ label: "FC", href: "https://www.thefoundersclub.in" }],
+				}),
+				starlightContextualMenu({
+					actions: ["copy", "view", "chatgpt", "claude"]
 				}),
 				starlightScrollToTop({
 					position:'center'
