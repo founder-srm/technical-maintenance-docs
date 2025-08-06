@@ -1,12 +1,7 @@
-# Starlight Starter Kit: Basics
+# Founders Club Technical Documentation
 
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
-```
-bun create astro@latest -- --template starlight
-```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
 ## 🚀 Project Structure
 
@@ -19,6 +14,12 @@ Inside of your Astro + Starlight project, you'll see the following folders and f
 │   ├── assets/
 │   ├── content/
 │   │   └── docs/
+│       ├── guides/
+│       │   ├── app/
+│       │   ├── fc/
+│       │   ├── interview-guide/
+│       │   └── studio/
+│       └── index.md
 │   └── content.config.ts
 ├── astro.config.mjs
 ├── package.json
@@ -44,6 +45,13 @@ All commands are run from the root of the project, from a terminal:
 | `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `bun astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## Helpful Links
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+- [Starlight Documentation](https://starlight.astro.build/)
+- [Heading badges](https://starlight-heading-badges.vercel.app/usage)
+- [Video Embedding](https://starlight-videos.netlify.app/getting-started)
+- [Starlight Image Zoom](https://starlight-image-zoom.netlify.app/)
+- [Icons reference](https://starlight.astro.build/reference/icons)
+- [Components reference](https://starlight.astro.build/components/using-components)
+- [Frontmatter reference](https://starlight.astro.build/reference/frontmatter)
+- [Content reference](https://starlight.astro.build/reference/authoring-content)
