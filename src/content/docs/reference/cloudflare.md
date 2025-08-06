@@ -1,7 +1,7 @@
 ---
-title: Example Reference
+title: Cloudflare
 description: A reference page in my new Starlight docs site.
-slug: 1.0/reference/example
+slug: reference/cloudflare
 ---
 
 Reference pages are ideal for outlining how things work in terse and clear terms.
