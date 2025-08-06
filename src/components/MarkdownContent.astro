@@ -1,8 +1,12 @@
 ---
 import Default from "@astrojs/starlight/components/MarkdownContent.astro";
 import StarlightVideosMarkdownContent from "starlight-videos/components/MarkdownContent.astro";
+
+// Ensure all props are properly passed through for plugin compatibility
 ---
 
-<StarlightVideosMarkdownContent>
-	<Default><slot /></Default>
+<StarlightVideosMarkdownContent {...Astro.props}>
+	<Default {...Astro.props}>
+		<slot />
+	</Default>
 </StarlightVideosMarkdownContent>
