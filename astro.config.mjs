@@ -28,8 +28,8 @@ export default defineConfig({
 		starlight({
 			title: "FC Technical Docs",
 			logo: {
-				light: './src/assets/1.0/light-logo-fc.png',
-				dark: './src/assets/1.0/dark-logo-fc.png'
+				light: './src/assets/1.0/light-logo-fc-trimmed.png',
+				dark: './src/assets/1.0/dark-logo-fc-trimmed.png'
 			},
 			editLink: {
 				baseUrl: 'https://github.com/founder-srm/technical-maintenance-docs/edit/main'
