@@ -60,7 +60,13 @@ export default defineConfig({
 				starlightLinksValidator(),
 				starlightImageZoom(),
 				starlightUtils(),
-				starlightCoolerCredit(),
+				starlightCoolerCredit({
+					credit: {
+						title: "Check Out The Website!",
+						href: "https://www.thefoundersclub.in",
+						description: "Want to try out what you've learnt?",
+					},
+				}),
 				starlightVideos(),
 				starlightGiscus({
 					repo: "founder-srm/technical-maintenance-docs",
