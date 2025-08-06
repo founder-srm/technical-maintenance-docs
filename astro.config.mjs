@@ -14,6 +14,7 @@ import starlightThemeNova from 'starlight-theme-nova'
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://technical-maintenance-docs.pages.dev',	
 	integrations: [
 		mermaid({
 			theme: "forest",
@@ -25,6 +26,14 @@ export default defineConfig({
 			},
 		}),
 		starlight({
+			title: "FC Technical Docs",
+			logo: {
+				light: './src/assets/1.0/light-logo-fc.png',
+				dark: './src/assets/1.0/dark-logo-fc.png'
+			},
+			editLink: {
+				baseUrl: 'https://github.com/founder-srm/technical-maintenance-docs/edit/main'
+			},
 			plugins: [
 				starlightThemeNova({
 					nav:[
@@ -57,7 +66,6 @@ export default defineConfig({
 				MarkdownContent: "./src/components/MarkdownContent.astro",
 				PageTitle: "./src/components/PageTitle.astro"
 			},
-			title: "My Docs",
 			social: [
 				{
 					icon: "github",
@@ -70,7 +78,7 @@ export default defineConfig({
 					label: "Guides",
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: "Example Guide", slug: "guides/example" },
+						{ label: "Example Guide", slug: "1.0/guides/example" },
 					],
 				},
 				{
