@@ -10,7 +10,6 @@ import starlightContextualMenu from "starlight-contextual-menu";
 import starlightCoolerCredit from "starlight-cooler-credit";
 import starlightGiscus from "starlight-giscus";
 import starlightImageZoom from "starlight-image-zoom";
-import starlightLinksValidator from "starlight-links-validator";
 import starlightThemeNova from "starlight-theme-nova";
 import starlightVideos from "starlight-videos";
 
@@ -55,7 +54,6 @@ export default defineConfig({
 						words: "total",
 					},
 				}),
-				starlightLinksValidator(),
 				starlightImageZoom(),
 				starlightUtils(),
 				starlightCoolerCredit({
