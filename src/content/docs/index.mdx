@@ -10,11 +10,11 @@ hero:
     light: "~/assets/1.0/light-logo-fc.png"
     dark: "~/assets/1.0/dark-logo-fc.png"
   actions:
-    - text: Example Guide
+    - text: Get Started
       link: /guides/example/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+    - text: Read the Blog
+      link: /blog/
       icon: external
       variant: minimal 
 ---
@@ -22,23 +22,74 @@ hero:
 import { Card, CardGrid } from '@astrojs/starlight/components';
 import { ContributorList } from "starlight-contributor-list";
 
-## Next steps
+# Quick Start for New Users
+
+Welcome! This documentation is your comprehensive guide to working with the FC technical team. Whether you're a new team member, contributor, or just getting started, here's how to navigate effectively:
+
+## Start Here
+- **New to FC?** Begin with our [Interview Guide](/guides/interview-guide/) to understand our processes
+- **Ready to contribute?** Check out the [Contributing Guide](/guides/fc/contributing-guide/) 
+- **Need quick reference?** Browse our [Reference Section](/reference/cloudflare/) for tools and services
+
+### How This Documentation Works
+
+This site is organized into three main sections:
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="Guides" icon="approve-check">
+		Step-by-step tutorials for specific tasks. Perfect for learning new processes or onboarding team members.
+		
+		**Start with:** [Example Guide](/guides/example/) • [Contributing Guide](/guides/fc/contributing-guide/)
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="References" icon="open-book">
+		Quick lookup information for tools, services, and configurations we use daily.
+		
+		**Popular:** [Supabase](/reference/supabase/) • [Vercel](/reference/vercel/) • [Cloudflare](/reference/cloudflare/)
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="Blog Posts" icon="setting">
+		Updates, insights, and deep-dives from our technical team. Stay updated with latest developments.
+		
+		**Latest:** [Read our Blog](/blog/) for recent posts and announcements.
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Community" icon="github">
+		This is an open-source project! Found an issue or want to improve something? Contributions are welcome.
+		
+		**Get involved:** Check our [GitHub Repository](https://github.com/founder-srm/technical-maintenance-docs)
 	</Card>
 </CardGrid>
 
+## 🚀 What You Can Do Here
+
+<CardGrid>
+	<Card title="🔍 Find Answers Fast" icon="magnifier">
+		Use the search bar (Ctrl/Cmd + K) to quickly find what you're looking for across all documentation.
+	</Card>
+	<Card title="📱 Read Anywhere" icon="laptop">
+		This site works great on mobile, tablet, and desktop. Bookmark it for easy access!
+	</Card>
+	<Card title="🌙 Dark Mode" icon="moon">
+		Toggle between light and dark themes using the button in the top navigation.
+	</Card>
+	<Card title="📄 Print-Friendly" icon="document">
+		Need a hard copy? All pages are optimized for printing with clean, readable layouts.
+	</Card>
+</CardGrid>
+
+
+## 💡 Need Help?
+
+<CardGrid>
+	<Card title="Can't find what you're looking for?" icon="information">
+		- Try the search function (Ctrl/Cmd + K)
+		- Check if there's a similar topic in a different section
+		- Look at our [GitHub Issues](https://github.com/founder-srm/technical-maintenance-docs/issues) for known gaps
+	</Card>
+	<Card title="Want to contribute?" icon="pencil">
+		- Found a typo or outdated information? [Create an issue](https://github.com/founder-srm/technical-maintenance-docs/issues/new)
+		- Have a guide to add? Check our [Contributing Guidelines](/guides/fc/contributing-guide/)
+		- All contributions are welcome, no matter how small!
+	</Card>
+</CardGrid>
 
 ## Our Contributors
 
