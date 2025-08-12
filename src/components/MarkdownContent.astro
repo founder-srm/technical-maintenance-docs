@@ -1,11 +1,13 @@
 ---
 import Default from "@astrojs/starlight/components/MarkdownContent.astro";
+import ImageZoom from "starlight-image-zoom/components/ImageZoom.astro";
 import StarlightVideosMarkdownContent from "starlight-videos/components/MarkdownContent.astro";
 
 // Ensure all props are properly passed through for plugin compatibility
 ---
 
 <StarlightVideosMarkdownContent {...Astro.props}>
+	<ImageZoom />
 	<Default {...Astro.props}>
 		<slot />
 	</Default>
