@@ -119,6 +119,11 @@ export default defineConfig({
 											label: "Structure",
 											collapsed: true,
 											autogenerate: { directory: "guides/fc/studio/structure" }
+										},
+										{
+											label: "Components",
+											collapsed: false,
+											autogenerate: { directory: "guides/fc/studio/components" }
 										}
 									],
 								},
