@@ -115,7 +115,11 @@ export default defineConfig({
 									collapsed: true,
 									items: [
 										"guides/fc/studio/content-guide",
-										"guides/fc/studio/structure/home-page",
+										{
+											label: "Structure",
+											collapsed: true,
+											autogenerate: { directory: "guides/fc/studio/structure" }
+										}
 									],
 								},
 								{
